@@ -1,0 +1,32 @@
+development
+17/10/2024
+
+Podsumowanie Kroków, które Prowadziły do Sukcesu:
+
+Utworzenie i Aktywacja Wirtualnego Środowiska:
+
+bash
+Copy code
+python3 -m venv myenv
+source myenv/bin/activate
+Instalacja Wymaganych Pakietów:
+
+bash
+Copy code
+pip install flask openai flask-cors python-dotenv
+Konfiguracja Aplikacji Flask (app.py):
+
+Poprawne użycie Flask-CORS.
+Implementacja obsługi SSL poprzez Apache jako reverse proxy.
+Konfiguracja Apache jako Reverse Proxy:
+
+Instalacja i włączenie modułów proxy, proxy_http i ssl.
+Konfiguracja VirtualHost dla HTTPS z przekierowaniem na Flask.
+Aktualizacja Frontendu (index.html):
+
+Użycie HTTPS w zapytaniach fetch.
+Zapewnienie, że frontend komunikuje się z backendem przez bezpieczne połączenie.
+Testowanie i Weryfikacja:
+
+Używanie curl do testowania endpointów.
+Sprawdzanie logów serwera i narzędzi deweloperskich w przeglądarce.
